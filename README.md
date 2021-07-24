@@ -32,8 +32,8 @@ and the full text can be accessed directly at https://rdcu.be/b0mtx.
 - [Data splits](#data-splits)
 - [Features](#features)
 - [AlphaFold 2.0](#alphafold-20)
-- [AlphaFold Protein Structure Database](alphaFold-protein-structure-database)
-- [Disclaimer](disclaimer)
+- [AlphaFold Protein Structure Database](#alphafold-protein-structure-database)
+- [Disclaimer](#disclaimer)
 
 <br>
 
@@ -521,7 +521,7 @@ https://alphafold.ebi.ac.uk/
 
 ![AlphaFoldDB](imgs/AlphaFoldDB.png)
 
-Figure 3. probable disease resistance protein At1g58602
+Figure 3. probable disease resistance protein ``At1g58602``
 
 [Index](#index)
 
@@ -532,5 +532,5 @@ This is not an official Google product.
 [Index](#index)
 
 <br>
-Special thanks for DeepMind!
+Special thanks for DeepMind !
 
