@@ -1,0 +1,5 @@
+*.zip #ignore the data download form source
+*/T0990/ #ignore big file
+*/T0989/ 
+
+
