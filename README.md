@@ -1,7 +1,7 @@
 # AlphaFold-baseline
 
 <p align="center">
-  <img src=imgs/fold-process.png" width=60% alt="fold process illustration">
+  <img src="imgs/fold-process.png" width=65% alt="fold process illustration">
 </p>
 
 
@@ -9,7 +9,7 @@ This package provides an basic implementation of the contact prediction network 
 in AlphaFold 1 for beginner, associated model weights and CASP13 dataset as used for CASP13
 (2018) and published in Nature. **This is completely different code from that
 used in AlphaFold 2 which was used in CASP14 (2020). You can find AlphaFold 2 at
-https://github.com/deepmind/alphafold.** also as seen below [AlphaFold 2.0](#alphafold-20).
+https://github.com/deepmind/alphafold** also as seen below [AlphaFold 2.0](#alphafold-20).
 
 Any publication that discloses findings arising from using this source code must
 cite *Improved protein structure prediction using potentials from deep learning*
@@ -22,6 +22,21 @@ The paper abstract can be found on Nature's site
 [10.1038/s41586-019-1923-7](https://www.nature.com/articles/s41586-019-1923-7)
 and the full text can be accessed directly at https://rdcu.be/b0mtx.
 
+### Index
+
+- [Setup](#setup)
+  - [Dependencies](#dependencies)
+  - [File Structure](#file-structure)
+- [Data](#data)
+- [Distogram prediction](#distogram-prediction)
+- [Data splits](#data-splits)
+- [Features](#features)
+- [AlphaFold 2.0](#alphafold-20)
+- [AlphaFold Protein Structure Database](alphaFold-protein-structure-database)
+- [Disclaimer](disclaimer)
+
+<br>
+
 ## Setup
 
 **This code can't be used to predict structure of an arbitrary protein sequence.
@@ -33,6 +48,8 @@ to the features used for those accustomed to computing them below. See also
 details.
 
 This code works on Linux, we don't support other operating systems.
+
+[Index](#index)
 
 ### Dependencies
 
@@ -54,12 +71,14 @@ You can set up Python virtual environment (you might need to install the
 python3 -m venv alphafold_venv
 source alphafold_venv/bin/activate
 pip install wheel
-pip install -r alphafold_casp13/requirements.txt
+pip install -r requirements.txt
 ```
 
 Alternatively, you can just use the `run_eval.sh` script provided which will run
 these commands for you. See the section on [running the system](#) below for more
 details.
+
+[Index](#index)
 
 ### File Structure
 
@@ -81,10 +100,12 @@ AlphaFold-baseline
 ```
 
 <p align="center">
-  <img src="img/file-structure.png" width=60% alt="file structure">
+  <img src="imgs/file-structure.png" width=80% alt="file structure">
 </p>
 
 Figure 1. file structure in Unbuntu 18.04
+
+[Index](#index)
 
 ## Data
 
@@ -130,6 +151,8 @@ The `contacts/` folder is not needed to run the model, these files are included
 only for convenience so that you don't need to run the inference for CASP13
 targets to get the contact map.
 
+[Index](#index)
+
 ### Model checkpoints
 
 The model checkpoints can be downloaded from
@@ -149,6 +172,8 @@ Each directory with model weights contains a number of different model
 configurations. Each model has a config file and associated weights. There is
 only one torsion model. Each model directory also contains a stats file that is
 used for feature normalization specific to that model.
+
+[Index](#index)
 
 ## Distogram prediction
 
@@ -170,9 +195,9 @@ system. There are a few steps you need to start with:
     *   `OUTPUT_DIR` is by default set to a new directory with a timestamp
         within your home directory.
 
-<b>QUICK START</b>
-
-Then run `bash run_eval.sh` in the python virtual enviroment `alphafold-venv` created.
+> <b>QUICK START</b>
+> 
+> Then run `bash run_eval.sh` in the python virtual enviroment `alphafold-venv` created.
 
 The contact prediction works in the following way:
 
@@ -207,6 +232,8 @@ When running `run_eval.sh` the output has the following directory structure:
     **This is the final distogram that was used in the subsequent AlphaFold
     folding pipeline in CASP13.**
 
+[Index](#index)
+
 ### Distogram output format
 
 The distogram is a Python pickle file with a dictionary containing the following
@@ -228,12 +255,16 @@ fields:
 *   `domain`: The name of the target including the domain name.
 *   `probs`: The distogram as a Numpy array of shape `[L, L, num_bins]`.
 
+[Index](#index)
+
 ## Data splits
 
 We used a version of [PDB](https://www.rcsb.org/) downloaded on 2018-03-15. The
 train/test split can be found in the `train_domains.txt` and `test_domains.txt`
 files in this repository. The split is based on the
 [CATH 2018-03-16](https://www.cathdb.info/) database.
+
+[Index](#index)
 
 ## Features
 
@@ -251,7 +282,7 @@ to reconstruct our feature generation code. Some features that require more
 thorough explanation are explained in the section below the table. Note that
 `NR` stands for number of residues, i.e. the length of the amino acid sequence:
 
-<details><summary>📘 Click to Expand</summary>
+<details><summary>📑 <b>Click to Expand</b></summary>
 
 | Name                              | Needed | TF DType | Shape           | Description                                                                                                                  |
 |-----------------------------------|:------:|----------|-----------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -295,7 +326,9 @@ thorough explanation are explained in the section below the table. Note that
 
 </details>
 
-<details><summary>📘 <h3>More details on needed features</h3></summary>
+[Index](#index)
+
+<details><summary>💡 <b>More details on needed features</b></summary>
 
 #### `aatype`
 
@@ -467,7 +500,8 @@ with Alanine, Lysine, Arginine has `sequence = 'AKR'`.
 
 </details>
 
-
+[Index](#index)
+  
 # AlphaFold 2.0
 
 https://github.com/deepmind/alphafold/
@@ -479,6 +513,8 @@ notebook](https://colab.research.google.com/github/deepmind/alphafold/blob/main/
 
 Figure 2. CASP14 predictions
 
+[Index](#index)
+  
 # AlphaFold Protein Structure Database
 
 https://alphafold.ebi.ac.uk/
@@ -487,10 +523,13 @@ https://alphafold.ebi.ac.uk/
 
 Figure 3. probable disease resistance protein At1g58602
 
+[Index](#index)
 
 # Disclaimer
 
 This is not an official Google product. 
+
+[Index](#index)
 
 <br>
 Special thanks for DeepMind!
