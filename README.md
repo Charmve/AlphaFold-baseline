@@ -1,7 +1,7 @@
 # AlphaFold-baseline
 
 <p align="center">
-  <img src="imgs/fold-process.png" width=65% alt="fold process illustration">
+  <img src="imgs/fold-process.png" width=70% alt="fold process illustration">
 </p>
 
 
@@ -85,10 +85,14 @@ details.
 ```
 AlphaFold-baseline
 ├── alphafold_casp13
-|   ├── __init__.py
-|   ├── tensorflow.py
-|   ├── torch.py
-|   └── utils.py
+|   ├── asa_output.py
+|   ├── config_dict.py
+|   ├── contacts.py
+|   ├── distogram_io.py
+|   ├── parsers.py
+|   ├── secstruct.py
+|   ├── two_dim_convnet.py
+|   └── two_dim_resnet.py
 ├── alphafold_venv --created in #Dependencies section
 ├── alphafold_casp13_weights --download form #Data section
 ├── casp13_data --download form #Data section
@@ -532,5 +536,5 @@ This is not an official Google product.
 [Index](#index)
 
 <br>
-Special thanks for DeepMind !
+<b><em>Special thanks for DeepMind !</em></b>
 
