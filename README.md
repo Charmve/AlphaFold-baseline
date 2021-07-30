@@ -1,4 +1,15 @@
 # AlphaFold-baseline
+<p align="left">
+	<a href="https://circleci.com/gh/Charmve/computer-vision-in-action"><img src="https://circleci.com/gh/Charmve/computer-vision-in-action.svg?style=svg" alt="CircleCI" title="CircleCI"></a>
+	<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="display:inline-block"><img src="https://img.shields.io/badge/license-Apache%202.0-red?logo=apache" alt="Code License"></a>
+  <a rel="Data License" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="知识共享许可协议" style="border-width:0" src="https://img.shields.io/badge/docs%20license-CC%20BY--NC--SA%204.0-green?logo=creativecommons" title="CC BY--NC--SA 4.0"/></a>
+	<br><a href="https://github.com/Charmve/AlphaFold-baseline/tree/main/code/"><img src="https://img.shields.io/badge/Python-v3.8.10-000000.svg?logo=Python&color=brightgreen" alt="Python version"></a>
+  <a href="https://github.com/Charmve/AlphaFold-baseline"><img src="https://img.shields.io/badge/Ubuntu-v18.04-000000.svg?logo=ubuntu&color=orange" alt="ubuntu version"></a>
+  <a href="https://github.com/Charmve/AlphaFold-baseline"><img src="https://img.shields.io/badge/TensorFlow-v1.14-000000.svg?logo=tensorflow&color=lightorange" alt="TensorFlow version"></a>
+  <a href="https://github.com/Charmve/AlphaFold-baseline/edit/master/README.md"><img src="https://img.shields.io/github/stars/Charmve/AlphaFold-baseline?style=social" alt="Stars"></a>
+  <a href="https://github.com/Charmve/AlphaFold-baseline/edit/master/README.md"><img src="https://img.shields.io/github/forks/Charmve/AlphaFold-baseline?style=social" alt="Forks"></a>
+</p>
+
 
 <p align="center">
   <img src="imgs/fold-process.png" width=70% alt="fold process illustration">
@@ -59,7 +70,7 @@ This code works on Linux, we don't support other operating systems.
 *   [Six 1.12](https://pypi.org/project/six/)
 *   [Setuptools 41.0.0](https://setuptools.readthedocs.io/en/latest/)
 *   [Sonnet 1.35](https://github.com/deepmind/sonnet)
-*   [TensorFlow 1.14](https://tensorflow.org). Not compatible with TensorFlow
+*   [TensorFlow 1.14](https://tensorflow.org).  *Not compatible with TensorFlow*
     2.0+.
 *   [TensorFlow Probability 0.7.0](https://www.tensorflow.org/probability)
 
@@ -121,10 +132,10 @@ https://creativecommons.org/licenses/by-nc/4.0/legalcode
 
 You can download the data from:
 
-*   http://bit.ly/alphafold-casp13-data-license: The data license file.
-*   http://bit.ly/alphafold-casp13-data: The dataset to reproduce AlphaFold's
+*   http://bit.ly/alphafold-casp13-data-license - The data license file.
+*   http://bit.ly/alphafold-casp13-data - The dataset to reproduce AlphaFold's
     CASP13 results.
-*   http://bit.ly/alphafold-casp13-weights: The model checkpoints.
+*   http://bit.ly/alphafold-casp13-weights - The model checkpoints.
 
 ### Input data
 
