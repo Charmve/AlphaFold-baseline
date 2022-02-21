@@ -1,4 +1,5 @@
-# AlphaFold-baseline
+# AlphaFold-baseline <sup><code><a href="https://youtu.be/AWd7x_3GaZk" target="_blank" class="button big wide smooth-scroll-middle"> Video </a> </code></sup>
+
 <p align="left">
 	<a href="https://circleci.com/gh/Charmve/computer-vision-in-action"><img src="https://circleci.com/gh/Charmve/computer-vision-in-action.svg?style=svg" alt="CircleCI" title="CircleCI"></a>
 	<a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" style="display:inline-block"><img src="https://img.shields.io/badge/license-Apache%202.0-red?logo=apache" alt="Code License"></a>
@@ -32,6 +33,8 @@ Pushmeet Kohli, David T. Jones, David Silver, Koray Kavukcuoglu, Demis Hassabis.
 The paper abstract can be found on Nature's site
 [10.1038/s41586-019-1923-7](https://www.nature.com/articles/s41586-019-1923-7)
 and the full text can be accessed directly at https://rdcu.be/b0mtx.
+
+====
 
 ### Index
 
